@@ -14,10 +14,10 @@ app.use(express.static(__dirname));
 
 // Mapa de correos institucionales destino
 const EMAILS_INSTITUCIONALES = {
-  CREN: 'baldomeroyo@gmail.com',
-  UMCE: '23610049@utgz.edu.mx'
-  // CREN: 'direccion.cren@msev.gob.mx',
-  // UMCE: 'movilidad@umce.cl'
+  // CREN: 'baldomeroyo@gmail.com',
+  // UMCE: '23610049@utgz.edu.mx'
+  CREN: 'direccion.cren@msev.gob.mx',
+  UMCE: 'movilidad@umce.cl'
 };
 
 // Configuración de Nodemailer (usa variables de entorno o valores por defecto)
