@@ -107,7 +107,11 @@ ${mensaje}
   }
 });
 
-// Iniciar Servidor
-app.listen(PORT, () => {
-  console.log(`Servidor Backend CREN-UMCE ejecutándose en http://localhost:${PORT}`);
-});
+// Exportar app para Vercel serverless
+module.exports = app;
+
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`Servidor Backend CREN-UMCE ejecutándose en http://localhost:${PORT}`);
+  });
+}
