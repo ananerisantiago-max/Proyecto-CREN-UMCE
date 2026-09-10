@@ -13,12 +13,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname)));
 
-// Ruta principal para servir index.html
-app.get('*', (req, res, next) => {
-  if (req.path.startsWith('/api')) return next();
-  res.sendFile(path.join(__dirname, 'index.html'));
-});
-
 // Mapa de correos institucionales destino
 const EMAILS_INSTITUCIONALES = {
   // CREN: 'baldomeroyo@gmail.com',
