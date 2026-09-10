@@ -88,8 +88,16 @@ body {
   height: 32px;
 }
 
-.logo-cren .logo-icon { stroke: #047857; }
-.logo-umce .logo-icon { stroke: #1e3a8a; }
+.logo-img {
+  height: 44px;
+  width: auto;
+  object-fit: contain;
+}
+
+.logo-img-proyecto {
+  height: 48px;
+  border-radius: 6px;
+}
 
 .logo-text {
   display: flex;
